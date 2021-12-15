@@ -26,6 +26,7 @@ function mySet () {
     }
     console.log(add(6))
 
+    // removing from stack
     this.remove = function (element) {
         if(this.has(element)) {
             index = collection.indexOf(element)
@@ -35,6 +36,34 @@ function mySet () {
         return false
     }
     console.log(remove(1))
+
+    // checking the size of the set
+    this.size = function () {
+        return collection.length
+    }
+
+    /* ********* These methods not in implementatons of ES6 *********** */
+    
+    // this method will return the union of the two sets
+
+    this.union = function(otherSet) {
+        let unionSet = new Set()
+        let firstSet = collection
+        firstSet = this.value()
+        let secondSet =  otherSet
+
+        firstSet.forEach((e) => {
+            unionSet.add(e)
+        })
+
+        secondSet.forEach((e) => {
+            unionSet.add(e)
+        })
+
+        return unionSet
+    }
+    console.log(union([1,3,4,7,8,9]))
+
 
     
 
