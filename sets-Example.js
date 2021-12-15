@@ -50,7 +50,7 @@ function mySet () {
         let unionSet = new Set()
         let firstSet = collection
         firstSet = this.value()
-        let secondSet =  otherSet
+        let secondSet =  otherSet //.value()
 
         firstSet.forEach((e) => {
             unionSet.add(e)
@@ -63,6 +63,44 @@ function mySet () {
         return unionSet
     }
     console.log(union([1,3,4,7,8,9]))
+
+
+    // returns common values of set, INTERSECTION
+    this.intersection = function (anotherSet) {
+        let intersectionSet = new Set()
+        let firstSet = this.value()
+        firstSet.forEach(function(e) {
+            if(anotherSet.has(e)) {
+                intersectionSet.add(e)
+            }
+        })
+        return intersectionSet  
+    }
+    //console.log(intersection([1, 2, 3, 4]))
+
+
+    // method returns differences of two Sets
+    this.difference = function(otherSet) {
+        let differentSet = new Set()
+        let  firstSet = this.value()
+        firstSet.forEach(function(e) {
+            if(!otherSet.has(e)) {
+                differentSet.add(e)
+            }
+        })
+        return differentSet
+    } 
+
+
+    //this method will test if the set is  a subset of a different set
+    this.subset = function (otherSet) {
+        var firstSet = this.values();
+        return firstSet.every(function(value) {
+            return otherSet.has(value);
+        }); 
+    }
+
+
 
 
     
