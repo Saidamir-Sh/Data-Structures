@@ -12,7 +12,7 @@ function mySet () {
 
     // returns all elements in the set
     this.value = function(element) {
-        return collection
+        return collectionData-Structures
     }
     console.log(value())
 
@@ -99,12 +99,5 @@ function mySet () {
             return otherSet.has(value);
         }); 
     }
-
-
-
-
-    
-
-
 }
 mySet()
