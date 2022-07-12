@@ -81,12 +81,12 @@ function mySet () {
         return unionSet
     }
 
-    //this method will return the common elements of two sets
+    //this method will return the common elements of two sets set1 = [1, 3, 5, 7, 9] set2 = [1, 2, 3, 4, 5]
     this.intersection = function (anotherSet) {
         var intersectionSet = new mySet();
         var firstSet = this.values();
         firstSet.forEach(function(e) {
-            if(otherSet.has(e)) {
+            if(anotherSet.has(e)) {
                 intersectionSet.add(e);
             }
         });
@@ -108,7 +108,7 @@ function mySet () {
     //this method will test if the set is  a subset of a different set
     this.subset = function (otherSet) {
         var firstSet = this.values();
-        return firstSet.every(function(value) {
+        return firstSet.every(function(value) { // every() method runs the function for every element in array, and if all elements passes the test returns true if one element fails returns false for a
             return otherSet.has(value);
         }); 
     }
