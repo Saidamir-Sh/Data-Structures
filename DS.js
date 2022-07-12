@@ -33,7 +33,7 @@ function mySet () {
 
     //this method will check the presence of the element and returns true or false 
     this.has = function(element) {
-        return  (collection.indexOf(element) !== -1);
+        return  (collection.indexOf(element) !== -1); // indexOf returns first index of specified value, if not found returns -1.
     };
 
     //this method returns all values in the set
@@ -54,7 +54,7 @@ function mySet () {
     this.remove = function(element) {
         if(this.has(element)) {
             index = collection.indexOf(element);
-            collection.splice(index, 1);
+            collection.splice(index, 1); // splice method adds and/or removes item from element. splice(index, howMany, item1, item2)
             return true;
         }
         return false;
@@ -71,7 +71,7 @@ function mySet () {
     this.union = function(otherSet) {
         var unionSet = new mySet(); // new empty Set obj
         var firstSet = this.values();
-        var secodnSet = otherSet.values(); // values of accepting set in params
+        var secondSet = otherSet.values(); // values of accepting set in params
         firstSet.forEach(function(e) {
             unionSet.add(e); // looping through set values and adding 'em into new UnionSet
         });
