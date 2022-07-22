@@ -27,3 +27,18 @@ let arr =     [[1, 1, 1, 0, 0, 0], [0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 0
 
 hourglassSum(arr);
 
+/*
+A left rotation operation on an array of size shifts each of the array's elements unit to the left. Given an integer, , rotate the array that many steps left and return the result. 
+*/
+
+function rotateLeft(d, arr) {
+    // Write your code here
+    let rotArr = []
+    for(let i = 0; i < arr.length; i++) {
+        rotArr.push(arr[i])
+    }
+    for(let j = 0; j < d; j++) {
+      rotArr.shift(rotArr.push(rotArr[0]));
+    }
+    return rotArr
+}

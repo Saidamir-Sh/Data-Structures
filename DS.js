@@ -3,6 +3,8 @@
 // Dynamic DS
 // Abstract Data type   
 // functions : push(adds to the last), pop(removes last element), peek, length
+// shift() => removes item from the beginning
+// unshift() = > adds item to the beginning
 
 var letters = [];
 
