@@ -22,3 +22,24 @@ function insertNodeAtHead(head, data) {
     console.log(llist.data)
   }
 }
+
+function reverse(llist) {
+    // Write your code here
+    let prev = null
+    let current = llist
+    let next = null
+    
+    if(current === null) {
+        return null
+    }
+    
+    while(current !== null) {
+        next = current.next
+        current.next = prev
+        prev = current
+        current = next
+    }
+    
+    llist = prev
+    return llist
+}
