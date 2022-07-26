@@ -10,3 +10,15 @@ function insertNodeAtHead(head, data) {
       node.next = head;
       return node;
   }
+
+  /*
+  Reversing Linkeded List
+  */
+
+  function reversePrint(llist) {
+    // Write your code here
+  if (llist !== null) {
+    reversePrint(llist.next);s
+    console.log(llist.data)
+  }
+}
