@@ -1,4 +1,4 @@
-# Two Pointer Technique
+# Two Pointers Technique
 
 ## Blogs
   - [Two Pointers Technique by GeeksforGeeks](https://www.geeksforgeeks.org/two-pointers-technique/)
