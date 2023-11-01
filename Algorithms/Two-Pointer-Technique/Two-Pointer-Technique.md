@@ -4,6 +4,7 @@
   - [Two Pointers Technique by GeeksforGeeks](https://www.geeksforgeeks.org/two-pointers-technique/)
   - [The Two-Pointer Technique in a Linked List](https://www.codecademy.com/article/the-two-pointer-technique-in-a-linked-list-swift)
   - [Using the Two Pointer Technique](https://medium.com/swlh/using-the-two-pointer-technique-bf642ab05661)
+  - [Sliding Window Algorithm on Strings](https://labuladong.gitbook.io/algo-en/iii.-algorithmic-thinking/slidingwindowtechnique)
 <br></br>
 
 ## Youtube videos
